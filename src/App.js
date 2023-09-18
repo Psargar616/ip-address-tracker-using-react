@@ -99,7 +99,7 @@ function App() {
                 <h2 className="font-bold uppercase text-sm text-slate-500 tracking-wide mb-3">
                   IP Address
                 </h2>
-                <p className="font-semibold text-slate-900 text-lg md:text-xl xl:text-2xl ">
+                <p className="font-semibold text-slate-900 text-lg md:text-xl xl:text-xl ">
                   {address.ip}
                 </p>
               </div>
@@ -109,7 +109,7 @@ function App() {
                 <h2 className="font-bold uppercase text-sm text-slate-500 tracking-wide mb-3">
                   location
                 </h2>
-                <p className="font-semibold text-slate-900 text-lg md:text-xl xl:text-2xl ">
+                <p className="font-semibold text-slate-900 text-lg md:text-xl xl:text-xl ">
                   {address.location.city}, <br></br>
                   {address.location.region}
                 </p>
@@ -119,7 +119,7 @@ function App() {
                 <h2 className="font-bold uppercase text-sm text-slate-500 tracking-wide mb-3">
                   Timezone
                 </h2>
-                <p className="font-semibold text-slate-900 text-lg md:text-xl xl:text-2xl ">
+                <p className="font-semibold text-slate-900 text-lg md:text-xl xl:text-xl ">
                   UTC {address.location.timezone}
                 </p>
               </div>
@@ -128,7 +128,7 @@ function App() {
                 <h2 className="font-bold uppercase text-sm text-slate-500 tracking-wide mb-3">
                   ISP
                 </h2>
-                <p className="font-semibold text-slate-900 text-lg md:text-xl xl:text-2xl ">
+                <p className="font-semibold text-slate-900 text-lg md:text-xl xl:text-xl ">
                   {address.isp}
                 </p>
               </div>
