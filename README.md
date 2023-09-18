@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [  URL](https://github.com/Psargar616/ip-address-tracker-using-react)
+- Live Site URL: [ URL ](https://ip-tracker-react-fem-soln.netlify.app/)
 
 
 ### Built with
@@ -64,4 +64,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@Psargar616](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Psargar616](https://www.frontendmentor.io/profile/Psargar616)
