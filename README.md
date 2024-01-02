@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [  URL](https://github.com/Psargar616/ip-address-tracker-using-react)
-- Live Site URL: [ URL ](https://ip-tracker-react-fem-soln.netlify.app/)
+- Live Site URL: [ URL ](https://ip-address-tracker-react-fmsoln.netlify.app/)
 
 
 ### Built with
