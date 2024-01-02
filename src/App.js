@@ -54,18 +54,18 @@ function App() {
 
   return (
     <>
-      <section className=" relative max-h-max h-full flex flex-col gap-0 overflow-x-hidden ">
-        <div className="absolute -z-12 w-full ">
-          <img src={background} className="w-full  h-150 object-cover "></img>
+      <section className=" relative max-h-max h-full flex flex-col gap-0 overflow-x-hidden box-border ">
+        <div className="absolute -z-12 w-full h-[70vh]">
+          <img src={background} className="w-full h-full object-cover "></img>
         </div>
         {/* title and form */}
-        <div className=" p-8 z-30">
+        <div className=" p-8 z-30 h-[30vh] ">
           <h1 className="text-4xl font-bold text-white text-center mb-6">
             IP Address Tracker
           </h1>
 
           <form
-            className="h-12 flex items-center justify-center max-w-3xl mx-auto"
+            className="h-14 flex items-center justify-center max-w-3xl mx-auto"
             onSubmit={handleSubmit}
             autoComplete="off"
           >
@@ -91,11 +91,11 @@ function App() {
         {address && (
           <>
             <div
-              className="p-8 bg-white rounded-lg shadow gap-4 max-w-6xl mx-auto grid grid-cols-1  relative mt-8 md:grid-cols-2 lg:grid-cols-4 text-center md:text-left -mb-24"
+              className="p-8 bg-white rounded-lg shadow gap-4 max-w-3xl sm:max-w-6xl mx-auto grid grid-cols-2  relative mt-12 sm:mt-8 sm:grid-cols-2 lg:grid-cols-4 text-center md:text-left -mb-24"
               style={{ zIndex: 1000 }}
             >
               {/* IP */}
-              <div className="lg:border-r-2 lg:border-slate-400 pr-5  p-4">
+              <div className=" lg:border-r-2 lg:border-slate-400 pr-5 p-4">
                 <h2 className="font-bold uppercase text-sm text-slate-500 tracking-wide mb-3">
                   IP Address
                 </h2>
@@ -134,20 +134,21 @@ function App() {
               </div>
             </div>
             {/* map  z=>10*/}
-
-            <MapContainer
-              center={[address.location.lat, address.location.lng]}
-              zoom={13}
-              scrollWheelZoom={true}
-              style={{ height: "700px", width: "100vw", zIndex: "100" }}
-              className="-z-5"
-            >
-              <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              />
-              <MarkerPosition address={address} />
-            </MapContainer>
+            <div className="-mt-14">
+              <MapContainer
+                center={[address.location.lat, address.location.lng]}
+                zoom={13}
+                scrollWheelZoom={true}
+                style={{ height: "800px", width: "100vw", zIndex: "100" }}
+                className="-z-5"
+              >
+                <TileLayer
+                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                <MarkerPosition address={address} />
+              </MapContainer>
+            </div>
           </>
         )}
       </section>
